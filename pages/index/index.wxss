@@ -1,0 +1,86 @@
+.xbig {
+  font-size: 80rpx;
+}
+.big {
+  font-size: 40rpx;
+}
+.medium {
+  font-size: 36rpx;
+}
+.normal {
+  font-size: 34rpx;
+}
+.small {
+  font-size: 28rpx;
+}
+.xsmall {
+  font-size: 26rpx;
+}
+.xxsmall {
+  font-size: 22rpx;
+}
+
+.container {
+  padding: 30rpx 60rpx;
+}
+
+.text-green {
+  color: rgb(9, 187, 7);
+}
+.text-black {
+  color: rgb(0,0,0);
+}
+.text-semi {
+  color: rgb(53,53,53);
+}
+.text-grey {
+  color: rgb(136,136,136);
+}
+.text-light {
+  color: rgb(178,178,178);
+}
+.text-blue {
+  color: rgb(87,107,149);
+}
+.text-red {
+  color: rgb(230, 67, 64);
+}
+
+.title {
+  display: block;
+  margin-bottom: 24rpx;
+}
+
+.list {
+  display: block;
+  margin-bottom: 24rpx;
+}
+.list__item {
+  display: block;
+  margin-bottom: 20rpx;
+}
+.bg-blue {
+  background: #576b95;  
+}
+.bg-blue_press {
+  //background: #576b95;
+}
+.bg-green {
+  background: #09bb07;
+}
+.bg-red {
+  background: #e64340;
+}
+
+.button_blue {
+  background: #576b95;  
+  color: white;
+}
+.button_green {
+  background: #09bb07;
+  color: white;
+}
+.button_red {
+  background: #e64340;
+  color: white;
+}
