@@ -1,20 +1,27 @@
 var app = getApp()
 Page({
   data: {
-    typeList: ['牛肉板面','兰州拉面','重庆小面','河南烩面','阳春面','国士无双面']
+    typeList: []
   },
   onLoad: function(){
-    wx.getLocation({
-      type: 'wgs84',
+    var that = this;
+    app.getUserInfo(function(userInfo){});
+    wx.request({
+      url: 'https://hong.chirongkeji.com/chisha/get_food_list/',
       success: function(res){
-        var latitude = res.latitude;
-        var longitude = res.longitude;
-        //wx.showModal({
-        //  title: '当前位置',
-        //  content: latitude + ',' + longitude
-        //});
+        that.setData({
+          typeList: res.data.food_list
+        })
+        console.log(res.data);
       }
     });
+    //wx.getLocation({
+    //  type: 'wgs84',
+    //  success: function(res){
+    //    var latitude = res.latitude;
+    //    var longitude = res.longitude;
+    //  }
+    //});
   },
   onShareAppMessage: function(){
     return {
@@ -26,7 +33,7 @@ Page({
   choice: function(){
     var typeList = this.data['typeList'];
     var index = Math.ceil(Math.random()*typeList.length) - 1;
-    var result = typeList[index];
+    var result = typeList[index][1];
     wx.showModal({
       title: '点到啥就吃啥:',
       content: result,

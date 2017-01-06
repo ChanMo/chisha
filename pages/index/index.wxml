@@ -2,8 +2,8 @@
   <text class="title big text-green">吃啥</text>
   <view class="list">
   <block wx:for="{{typeList}}" wx:key="item">
-    <text class="list__item small text-simi">{{ item }}</text>
+    <text class="list__item small text-simi">{{ item[1] }}</text>
   </block>
   </view>
-  <button bindtap="choice" class="button_green">点我</button>
+  <button bindtap="choice" class="button_green">点我啊</button>
 </view>
