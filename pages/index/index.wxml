@@ -1,9 +1,12 @@
 <view class="container">
-  <text class="title big text-green">吃啥</text>
+  <text class="header big text-green">吃啥</text>
   <view class="list">
   <block wx:for="{{typeList}}" wx:key="item">
-    <text class="list__item small text-simi">{{ item[1] }}</text>
+    <text data-status="{{item['active']}}" class="list__item text-simi" bindtap="choiceForMenu">{{ item['name'] }}</text>
   </block>
   </view>
   <button bindtap="choice" class="button_green">点我啊</button>
+  <view class="text-center text-grey small" style="position:fixed;bottom:2vh;left:0;width:100%;">
+    <navigator url="/pages/card/card">驰荣科技</navigator>
+  </view>
 </view>

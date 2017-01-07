@@ -12,9 +12,15 @@ App({
       wx.login({
         success: function(res_code){
           console.log(res_code);
+          wx.getUserInfo({
+            success: function(res){
+              that.globalData.userInfo = res.userInfo;
+            }
+          });
+
+          /**
           wx.request({
             url: 'https://hong.chirongkeji.com/chisha/get_session_key/',
-            //method: 'POST',
             data: {
               'code':res_code.code
             },
@@ -42,6 +48,7 @@ App({
               });
             }
           });
+          **/
 
         }
       });

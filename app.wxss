@@ -1,0 +1,150 @@
+/**
+ * font size
+ */
+.xbig {
+  font-size: 80rpx;
+}
+.big {
+  font-size: 40rpx;
+}
+.medium {
+  font-size: 36rpx;
+}
+.normal {
+  font-size: 34rpx;
+}
+.small {
+  font-size: 28rpx;
+}
+.xsmall {
+  font-size: 26rpx;
+}
+.xxsmall {
+  font-size: 22rpx;
+}
+
+/**
+ * header
+ */
+.header {
+  display: block;
+  margin-bottom: 24rpx;
+}
+
+/**
+ * text color
+ */
+.text-green {
+  color: rgb(9, 187, 7);
+}
+.text-black {
+  color: rgb(0,0,0);
+}
+.text-semi {
+  color: rgb(53,53,53);
+}
+.text-grey {
+  color: rgb(136,136,136);
+}
+.text-light {
+  color: rgb(178,178,178);
+}
+.text-blue {
+  color: rgb(87,107,149);
+}
+.text-red {
+  color: rgb(230, 67, 64);
+}
+
+/**
+ * background color
+ */
+.bg-blue {
+  background: #576b95;  
+}
+/**.bg-blue_press {
+  background: #576b95;
+}**/
+.bg-green {
+  background: #09bb07;
+}
+.bg-red {
+  background: #e64340;
+}
+
+/**
+ * list
+ */
+.list {
+  display: block;
+  margin-bottom: 24rpx;
+}
+.list__item {
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+/**
+ * menu
+ */
+.menu {
+  display: inline-block;
+  margin-bottom: 24rpx;
+}
+.menu__item {
+  display: inline-block;
+}
+
+/**
+ * button
+ */
+.button_blue {
+  background: #576b95;  
+  color: white;
+}
+.button_green {
+  background: #09bb07;
+  color: white;
+}
+.button_red {
+  background: #e64340;
+  color: white;
+}
+
+/**
+ * image
+ */
+.image_full {
+  width: 100%;
+}
+
+/**
+ * text align
+ */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+/**
+ * navigator
+ */
+navigator {
+  display: inline-block;
+}
+
+/**
+ * flex
+ */
+.flex-wrap {
+  display: flex;
+}
+.flex-wrap__item {
+  display: block;
+  width: 100%;
+}
